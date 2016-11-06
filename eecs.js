@@ -156,7 +156,7 @@ loopAudio.loop = true;
 
 
 function memo() {
-  window.open("memo.html");
+  window.open("index.html");
 }
 
 function moreeecs() {

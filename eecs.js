@@ -70,16 +70,16 @@ function pulse() {
 }
 
 function iam() {
-    $(".iam-text").text("I'm in");
+    $(".iam-text").text("I'm an");
     setTimeout(function() {
         $(".iam-text").text("");
     }, BEAT_TIME);
 }
 
-function masterrace() {
-    $(".masterrace-text").text("MasterRace");
+function masterace() {
+    $(".masterace-text").text("Master-Ace");
     setTimeout(function() {
-        $(".masterrace-text").text("");
+        $(".masterace-text").text("");
     }, BEAT_TIME);
 }
 
@@ -98,6 +98,7 @@ function start1() {
     loopAudio.pause();
     loopAudio.volume = 1;
     $(".warning").css("font-size", "0.00002vw");
+    $(".disclaimer").css("font-size", "0.00002vw");
     $(".startbutton").css("top", "-100%");
     pulse();
     introAudio.play();
@@ -138,7 +139,7 @@ function body() {
         }, BEAT_TIME * 8);
     }, BEAT_TIME * 15);
     setTimeout(function () {
-        setInterval(masterrace, BEAT_TIME * 4);
+        setInterval(masterace, BEAT_TIME * 4);
     }, BEAT_TIME * 45);
     setInterval(fontChange, 100);
     setInterval(title, 1000);
